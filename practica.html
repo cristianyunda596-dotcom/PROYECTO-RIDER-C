@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Llamado a funciones y salida de js a HTML</title>
+  <link rel="stylesheet" href="/Practica.css">
+</head>
+<body>
+
+  <h1>Llamado a funciones y salida de js a HTML</h1>
+
+  <!-- Primera sección: Texto y LlamaFunción -->
+  <div>
+    <label for="txtDato">Dato: </label>
+    <input type="text" id="txtDato" value="Rider">
+    <button id="btnLlamaFuncion">LlamaFunción</button>
+  </div>
+
+  <br>
+
+  <!-- Segunda sección: Cálculo de operaciones con dos números -->
+  <div>
+    <label for="num1">Número 1 (o Ángulo en Grados): </label>
+    <input type="number" id="num1" value="30">
+
+    <label for="num2">Número 2: </label>
+    <input type="number" id="num2" value="2">
+
+    <button id="btnCalcular">Calcular</button>
+  </div>
+
+  <!-- Lugar donde JavaScript mostrará el resultado general -->
+  <h2 id="resultado"></h2>
+
+  <h3>Al presionar botón aquí aparecerá resultado:</h3>
+  <p id="pfoSalida">Dato resultante en párrafo - ingresado en caja con id</p>
+  <div id="divSalidaSuma">Dato resultado Suma en contenedor div con id</div>
+  <div class="divSalidaResta">Dato Resultado Resta en contenedor div con class</div>
+  <div class="divSalidaMultiplica">Resultado multiplicación en contenedor div con class</div>
+  <div class="divSalidaDivide">Resultado división en contenedor div con class</div>
+  <div class="divSalidaCociente">Resultado cociente en contenedor div con class</div>
+  <div class="divSalidaResiduo">Resultado residuo en contenedor div con class</div>
+  
+  <!-- AQUÍ VAN LOS NUEVOS DIVS PARA SENO Y COSENO -->
+  <div class="divSalidaSeno">Resultado Seno en contenedor div con class</div>
+  <div class="divSalidaCoseno">Resultado Coseno en contenedor div con class</div>
+
+  <!-- Enlace al archivo de JavaScript externo -->
+  <script src="/Practica.js"></script>
+
+</body>
+</html>
