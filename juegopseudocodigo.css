@@ -1,0 +1,757 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #12002f,
+            #3b0764,
+            #1e40af,
+            #0891b2
+        );
+
+    color: white;
+
+    padding: 25px;
+
+}
+
+
+/* =====================================================
+   CONTENEDOR
+===================================================== */
+
+.juego {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    color: #1e1b4b;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.35);
+
+}
+
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.encabezado {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.encabezado h1 {
+
+    font-size: 36px;
+
+    color: #7c3aed;
+
+    margin-bottom: 10px;
+
+}
+
+
+.encabezado p {
+
+    color: #64748b;
+
+}
+
+
+/* =====================================================
+   MARCADOR
+===================================================== */
+
+.marcador {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.estadistica {
+
+    padding: 15px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #2563eb
+        );
+
+    box-shadow:
+        0 5px 15px
+        rgba(37, 99, 235, 0.25);
+
+}
+
+
+.estadistica span {
+
+    display: block;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+
+}
+
+
+/* =====================================================
+   PROGRESO
+===================================================== */
+
+.progreso-contenedor {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+}
+
+
+.progreso {
+
+    height: 100%;
+
+    width: 0%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a855f7,
+            #2563eb,
+            #06b6d4
+        );
+
+    transition:
+        width 0.5s ease;
+
+}
+
+
+/* =====================================================
+   NIVEL
+===================================================== */
+
+.nivel {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.nivel h2 {
+
+    color: #2563eb;
+
+    margin-bottom: 5px;
+
+}
+
+
+.nivel p {
+
+    color: #64748b;
+
+}
+
+
+/* =====================================================
+   PREGUNTA
+===================================================== */
+
+.pregunta {
+
+    padding: 25px;
+
+    background: #f8fafc;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 18px;
+
+}
+
+
+.pregunta h3 {
+
+    font-size: 22px;
+
+    color: #312e81;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =====================================================
+   CÓDIGO
+===================================================== */
+
+.codigo {
+
+    padding: 18px;
+
+    margin: 15px 0;
+
+    border-radius: 12px;
+
+    background: #111827;
+
+    color: #22d3ee;
+
+    font-family:
+        Consolas,
+        monospace;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    overflow-x: auto;
+
+}
+
+
+/* =====================================================
+   ELEMENTOS HIJOS
+===================================================== */
+
+.lista-hijos {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 20px 0;
+
+}
+
+
+.hijo {
+
+    flex: 1;
+
+    min-width: 120px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #e0e7ff;
+
+    color: #312e81;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border: 3px solid transparent;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.hijo:hover {
+
+    transform:
+        translateY(-5px);
+
+    background: #c4b5fd;
+
+}
+
+
+/* =====================================================
+   PRIMER HIJO
+===================================================== */
+
+.lista-hijos .hijo:first-child {
+
+    border-color: #ef4444;
+
+}
+
+
+/* =====================================================
+   SEGUNDO HIJO
+===================================================== */
+
+.lista-hijos .hijo:nth-child(2) {
+
+    border-color: #f59e0b;
+
+}
+
+
+/* =====================================================
+   TERCER HIJO
+===================================================== */
+
+.lista-hijos .hijo:nth-child(3) {
+
+    border-color: #10b981;
+
+}
+
+
+/* =====================================================
+   ÚLTIMO HIJO
+===================================================== */
+
+.lista-hijos .hijo:last-child {
+
+    border-color: #8b5cf6;
+
+}
+
+
+/* =====================================================
+   RESPUESTAS
+===================================================== */
+
+.respuestas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.respuesta {
+
+    padding: 15px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: #1e293b;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* HOVER */
+
+.respuesta:hover {
+
+    background: #ede9fe;
+
+    border-color: #8b5cf6;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(124, 58, 237, 0.2);
+
+}
+
+
+/* ACTIVE */
+
+.respuesta:active {
+
+    transform:
+        scale(0.95);
+
+}
+
+
+/* FOCUS */
+
+.respuesta:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+
+
+/* FOCUS VISIBLE */
+
+.respuesta:focus-visible {
+
+    outline:
+        3px solid #f59e0b;
+
+    outline-offset: 3px;
+
+}
+
+
+/* =====================================================
+   RESPUESTA CORRECTA
+===================================================== */
+
+.respuesta.correcta {
+
+    background: #dcfce7;
+
+    border-color: #16a34a;
+
+    color: #166534;
+
+}
+
+
+/* =====================================================
+   RESPUESTA INCORRECTA
+===================================================== */
+
+.respuesta.incorrecta {
+
+    background: #fee2e2;
+
+    border-color: #dc2626;
+
+    color: #991b1b;
+
+}
+
+
+/* =====================================================
+   EXPLICACIÓN
+===================================================== */
+
+.explicacion {
+
+    display: none;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    border-left:
+        6px solid #2563eb;
+
+}
+
+
+.explicacion.visible {
+
+    display: block;
+
+}
+
+
+.explicacion h4 {
+
+    color: #1d4ed8;
+
+    margin-bottom: 8px;
+
+}
+
+
+.explicacion p {
+
+    color: #334155;
+
+    line-height: 1.6;
+
+}
+
+
+.ejemplo-css {
+
+    margin-top: 12px;
+
+    padding: 12px;
+
+    background: #111827;
+
+    color: #67e8f9;
+
+    border-radius: 8px;
+
+    font-family:
+        Consolas,
+        monospace;
+
+}
+
+
+/* =====================================================
+   BOTÓN SIGUIENTE
+===================================================== */
+
+.siguiente {
+
+    display: none;
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7c3aed,
+            #2563eb
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.siguiente.visible {
+
+    display: block;
+
+}
+
+
+.siguiente:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(37, 99, 235, 0.35);
+
+}
+
+
+.siguiente:active {
+
+    transform:
+        scale(0.97);
+
+}
+
+
+/* =====================================================
+   PANTALLA FINAL
+===================================================== */
+
+.final {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+}
+
+
+.final.visible {
+
+    display: block;
+
+}
+
+
+.final .trofeo {
+
+    font-size: 70px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.final h2 {
+
+    font-size: 35px;
+
+    color: #7c3aed;
+
+    margin-bottom: 15px;
+
+}
+
+
+.reiniciar {
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #db2777,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+}
+
+
+.reiniciar:hover {
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    body {
+
+        padding: 12px;
+
+    }
+
+
+    .juego {
+
+        padding: 20px;
+
+    }
+
+
+    .encabezado h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .marcador {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .respuestas {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .hijo {
+
+        min-width: 100px;
+
+    }
+
+}

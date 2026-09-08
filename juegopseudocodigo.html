@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>🎮 Reto de Pseudoclases CSS</title>
+
+    <link rel="stylesheet" href="/juegopseudocodigo.css">
+
+</head>
+
+
+<body>
+
+    <div class="juego">
+
+        <!-- ==========================================
+             ENCABEZADO
+        =========================================== -->
+
+        <header class="encabezado">
+
+            <h1>
+                🎮 Reto de Pseudoclases CSS
+            </h1>
+
+            <p>
+                Aprende CSS mientras juegas
+            </p>
+
+        </header>
+
+
+        <!-- ==========================================
+             MARCADOR
+        =========================================== -->
+
+        <section class="marcador">
+
+            <div class="estadistica">
+
+                ⭐ Puntos
+
+                <span id="puntos">
+                    0
+                </span>
+
+            </div>
+
+
+            <div class="estadistica">
+
+                ❤️ Vidas
+
+                <span id="vidas">
+                    3
+                </span>
+
+            </div>
+
+
+            <div class="estadistica">
+
+                🎯 Pregunta
+
+                <span id="numero">
+                    1
+                </span>
+
+            </div>
+
+
+            <div class="estadistica">
+
+                🏆 Récord
+
+                <span id="record">
+                    0
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             BARRA DE PROGRESO
+        =========================================== -->
+
+        <div class="progreso-contenedor">
+
+            <div
+                class="progreso"
+                id="progreso"
+            ></div>
+
+        </div>
+
+
+        <!-- ==========================================
+             NIVEL
+        =========================================== -->
+
+        <section class="nivel">
+
+            <h2 id="nivel">
+                Nivel 1
+            </h2>
+
+            <p id="descripcion-nivel">
+                Interacciones básicas
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             JUEGO
+        =========================================== -->
+
+        <main id="juego-contenido">
+
+            <section class="pregunta">
+
+                <h3 id="pregunta">
+                    Cargando pregunta...
+                </h3>
+
+
+                <!-- Código de ejemplo -->
+
+                <div
+                    class="codigo"
+                    id="codigo"
+                ></div>
+
+
+                <!-- ==================================
+                     ELEMENTOS HIJOS
+                =================================== -->
+
+                <div
+                    class="lista-hijos"
+                    id="lista-hijos"
+                >
+
+                    <div class="hijo">
+                        HIJO 1
+                    </div>
+
+                    <div class="hijo">
+                        HIJO 2
+                    </div>
+
+                    <div class="hijo">
+                        HIJO 3
+                    </div>
+
+                    <div class="hijo">
+                        HIJO 4
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     RESPUESTAS
+                =================================== -->
+
+                <div
+                    class="respuestas"
+                    id="respuestas"
+                ></div>
+
+
+                <!-- ==================================
+                     EXPLICACIÓN
+                =================================== -->
+
+                <div
+                    class="explicacion"
+                    id="explicacion"
+                >
+
+                    <h4 id="resultado">
+                        Resultado
+                    </h4>
+
+                    <p id="texto-explicacion">
+                    </p>
+
+                    <div
+                        class="ejemplo-css"
+                        id="ejemplo-css"
+                    ></div>
+
+                </div>
+
+
+                <!-- ==================================
+                     SIGUIENTE
+                =================================== -->
+
+                <button
+                    class="siguiente"
+                    id="siguiente"
+                >
+                    Siguiente pregunta ➜
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- ==========================================
+             PANTALLA FINAL
+        =========================================== -->
+
+        <section
+            class="final"
+            id="final"
+        >
+
+            <div class="trofeo">
+                🏆
+            </div>
+
+            <h2>
+                ¡Juego terminado!
+            </h2>
+
+            <p id="resultado-final">
+            </p>
+
+            <button
+                class="reiniciar"
+                id="reiniciar"
+            >
+                🔄 Jugar nuevamente
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="/juegopseudocodigo.js"></script>
+
+</body>
+
+</html>

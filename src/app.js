@@ -1,0 +1,1 @@
+console.log("sistema sena code rider - version 1.0");
